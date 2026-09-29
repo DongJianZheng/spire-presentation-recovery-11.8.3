@@ -133,6 +133,16 @@ The JDK 17 class-loading run in `build/three-layer-397` loaded 3,402
 class was loaded from another path. The same isolated run generated valid
 PDF, PPT, ODP, HTML, TIFF, and PPTX outputs.
 
+The real 21-slide user fixture was rerun with only the recovered JAR in
+`build/three-layer-398`. The PDF was 10 pages and byte-identical to the
+recovered baseline. The regenerated PPTX had zero differing slide XML files
+across all 21 slides; both sides had 387 text nodes and 5,511 slide-text
+characters with matching key-text counts. ODP `content.xml` was byte-identical
+and both sides had 5,070 extracted characters, 21 pages, and 408 frames. The
+PPTX/ODP/HTML container hashes differ only in generated media UUIDs and
+container metadata. The legacy PPT path printed the same known NPE diagnostic
+and produced the same empty output as the reference path.
+
 ## Null-return source classification
 
 The five dynamically observed null-return methods were mapped back to the
