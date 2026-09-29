@@ -97,6 +97,13 @@ conversion paths without using the original JAR as a runtime dependency of
 the recovered artifact. The reference JAR is used only by the side-by-side
 acceptance harness.
 
+The independent exception probe in `build/three-layer-392` also matched
+line-for-line at the normalized `PROBE` record level: missing input throws the
+same custom exception and message; `appendTextFrame(null)` follows the same
+NPE stack path and returns from the outer probe; null format throws the same
+NPE and message; and saving to a missing parent returns on both sides. The
+stack-trace class line numbers are intentionally normalized as volatile.
+
 ## Dependency-isolation acceptance
 
 The format matrix was rerun in `build/three-layer-391` with IntelliJ IDEA's
