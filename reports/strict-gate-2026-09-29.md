@@ -106,3 +106,16 @@ including PDF, PPTX, ODP, HTML, TIFF, SVG, OFD, XPS, and Markdown. MP4 and
 WMV produced the expected `IllegalArgumentException` and are counted as the
 two defined negative cases. The candidate archive contains no nested `.jar`
 entries.
+
+## Null-return source classification
+
+The five dynamically observed null-return methods were mapped back to the
+recovered source. They are not missing decompiler bodies: `Shape.getPlaceholder`
+and `Shape.getClick` return optional backing fields and their callers perform
+explicit null checks; the `ParagraphList` font lookup returns null when the
+requested XML node is absent; its text parser returns null when no delimiter
+is found; and detached paragraph objects return null from `getPresentation`
+or `getSlide` when their parent is absent. The `Presentation` internal
+accessor transparently returns the underlying optional object. Replacing
+these values with defaults would change the caller control flow and violate
+the observed reference behavior.
