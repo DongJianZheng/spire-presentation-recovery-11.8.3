@@ -16,6 +16,25 @@ Candidate:
 | Outputs | PASS for the executed matrix | `build/final-acceptance`: 24 successful formats on both sides, two expected video failures, matching HTML/TIFF, normalized OOXML/ODP metadata, and pixel-identical first-page render for the complex fixture |
 | Strict source gate | FAIL | The executed path contains behaviorally real `null` returns and an exception-swallowing branch that are also present in the reference JAR |
 
+## State-value probe
+
+`tests/InternalStateTrace.java` was run against both artifacts in
+`build/three-layer-386`. It emitted 7,124 bounded reflection records per side
+and six public state records per side. The public state records were identical:
+
+- 2 slides, 720×540;
+- slide 2: `id=257`, 2 shapes after reopen;
+- test shape: `id=2`, `left=31.25`, `top=42.75`, `width=280.5`,
+  `height=66.75`, `rotation=18.75`, `z=0`.
+
+The raw private-object snapshot had 159 diff lines, all in volatile or
+identity-bearing state observed during this probe: file paths, generated
+object identities, serialized byte-array ordering, and timestamp/offset-like
+long values. It is therefore not treated as a matrix-equivalence pass. The
+existing bytecode/JVM trace remains the authority for method arguments and
+field-write multisets; this probe adds a reproducible public-state/value
+baseline without claiming that every private matrix value is proven.
+
 ## Strict-gate blockers
 
 The return-value trace (`build/three-layer-379/{original,recovered}/events.log`)
