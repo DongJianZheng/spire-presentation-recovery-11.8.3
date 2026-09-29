@@ -96,3 +96,13 @@ This fixture therefore passes the three output checks for the exercised
 conversion paths without using the original JAR as a runtime dependency of
 the recovered artifact. The reference JAR is used only by the side-by-side
 acceptance harness.
+
+## Dependency-isolation acceptance
+
+The format matrix was rerun in `build/three-layer-391` with IntelliJ IDEA's
+JDK 17. The class path contained only the recovered JAR and the test harness;
+the reference JAR was absent. The candidate produced 24 successful formats
+including PDF, PPTX, ODP, HTML, TIFF, SVG, OFD, XPS, and Markdown. MP4 and
+WMV produced the expected `IllegalArgumentException` and are counted as the
+two defined negative cases. The candidate archive contains no nested `.jar`
+entries.
