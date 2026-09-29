@@ -35,6 +35,13 @@ existing bytecode/JVM trace remains the authority for method arguments and
 field-write multisets; this probe adds a reproducible public-state/value
 baseline without claiming that every private matrix value is proven.
 
+The follow-up agent run in `build/three-layer-388` intercepted 15 returned
+`com.spire.presentation.packages.sprqgp` (`DrMatrix`) objects per side and
+recorded 120 primitive matrix-field records per side. After filtering the
+agent's binary-name diagnostic, the sorted matrix records were byte-identical
+(`cmp=0`). This is a successful matrix-value check for the exercised shape/save
+path, not proof of every rendering path.
+
 ## Strict-gate blockers
 
 The return-value trace (`build/three-layer-379/{original,recovered}/events.log`)

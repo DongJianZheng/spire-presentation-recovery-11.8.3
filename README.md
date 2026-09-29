@@ -8,6 +8,7 @@ This repository contains the readable Java source recovered from the authorized
 - `src/com/`: CFR decompiled and normalized Java source (`cfr-full-consistent`)
 - `tools/PptxSourceConvert.java`: source-based PPTX to PDF/HTML conversion utility
 - `tests/InternalStateTrace.java`: bounded public/private state comparison probe
+- `tests/TraceAgent.java`: JVM method/field/matrix trace agent
 - `reports/strict-gate-2026-09-29.md`: current three-layer acceptance result
 
 The repository intentionally excludes the original JAR, recovered JARs,
