@@ -16,14 +16,24 @@ function parse(file) {
   const nullReturns = new Map();
   const swallowed = new Map();
   let throws = 0;
+  let pendingMeta = null;
   for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
     const fields = line.split('|');
     if (fields[0] === 'ENTER') {
       stack.push(`${fields[1] ?? ''}|${fields[2] ?? ''}|${fields[3] ?? ''}`);
+    } else if (fields[0] === 'RETURN_FULL') {
+      // TraceAgent records the exact owner/method/descriptor on this line;
+      // use it instead of inferring from a nesting stack.  This also works
+      // when a method returns through an exception handler.
+      const method = fields.slice(1, 4).join('|') || '<unknown>';
+      if (fields[4] === 'null')
+        nullReturns.set(method, (nullReturns.get(method) ?? 0) + 1);
+      pendingMeta = null;
     } else if (fields[0] === 'RETURN' || fields[0] === 'RETURN_META' || fields[0] === 'THROW') {
       const method = stack.length ? stack[stack.length - 1] : '<unknown>';
       if (fields[0] === 'RETURN' && fields[1] === 'null')
-        nullReturns.set(method, (nullReturns.get(method) ?? 0) + 1);
+        nullReturns.set(pendingMeta ?? method, (nullReturns.get(pendingMeta ?? method) ?? 0) + 1);
+      if (fields[0] === 'RETURN_META') pendingMeta = fields.slice(1, 4).join('|');
       if (fields[0] === 'THROW') throws++;
       if (stack.length) stack.pop();
     } else if (fields[0] === 'EXCEPTION' || fields[0] === 'CATCH') {
