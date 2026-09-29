@@ -121,6 +121,13 @@ WMV produced the expected `IllegalArgumentException` and are counted as the
 two defined negative cases. The candidate archive contains no nested `.jar`
 entries.
 
+An OpenJDK 17 `jdeps` scan in `build/three-layer-396-jdeps.log` found only
+JDK modules (`java.base`, `java.xml`, `java.desktop`, logging, naming, prefs,
+SQL, and related standard modules) plus classes contained in the candidate
+itself. It reported no unresolved third-party classes. It did flag the
+preserved `sun.misc.BASE64Encoder/Decoder` use as a JDK removed-internal API;
+that is a JDK compatibility warning, not an external JAR dependency.
+
 ## Null-return source classification
 
 The five dynamically observed null-return methods were mapped back to the
