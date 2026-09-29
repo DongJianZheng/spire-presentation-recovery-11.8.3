@@ -128,6 +128,11 @@ itself. It reported no unresolved third-party classes. It did flag the
 preserved `sun.misc.BASE64Encoder/Decoder` use as a JDK removed-internal API;
 that is a JDK compatibility warning, not an external JAR dependency.
 
+The JDK 17 class-loading run in `build/three-layer-397` loaded 3,402
+`com.spire.presentation` classes, all from the recovered JAR path; no Spire
+class was loaded from another path. The same isolated run generated valid
+PDF, PPT, ODP, HTML, TIFF, and PPTX outputs.
+
 ## Null-return source classification
 
 The five dynamically observed null-return methods were mapped back to the
