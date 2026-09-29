@@ -104,6 +104,13 @@ NPE stack path and returns from the outer probe; null format throws the same
 NPE and message; and saving to a missing parent returns on both sides. The
 stack-trace class line numbers are intentionally normalized as volatile.
 
+The memory-bounded `tools/CompactStructureCompare.java` rerun in
+`build/three-layer-395` independently found 25,604 classes on each side and
+344 raw structural differences. It compares class access flags, superclass,
+interfaces, field and method descriptors, and declared `Exceptions` entries
+without loading classes or spawning one process per class; the result matches
+the earlier normalized-structure report.
+
 ## Dependency-isolation acceptance
 
 The format matrix was rerun in `build/three-layer-391` with IntelliJ IDEA's
