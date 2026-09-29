@@ -1,0 +1,68 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.spire.presentation.packages;
+
+import com.spire.presentation.packages.spreag;
+import com.spire.presentation.packages.sproze;
+import com.spire.presentation.packages.spryeg;
+
+public class sprmuf
+extends spreag {
+    private final byte[] cfr_renamed_0;
+    private final byte[] cfr_renamed_1;
+    private final byte[] cfr_renamed_2;
+    private final byte[] cfr_renamed_3;
+    private final byte[] cfr_renamed_4;
+
+    public byte[] cfr_renamed_2690() {
+        return sproze.cfr_renamed_158(this.cfr_renamed_3);
+    }
+
+    public byte[] cfr_renamed_91() {
+        sprmuf sprmuf2 = this;
+        byte[] byArray = new byte[sprmuf2.cfr_renamed_284().cfr_renamed_6375()];
+        System.arraycopy(sprmuf2.cfr_renamed_2, 0, byArray, 0, this.cfr_renamed_2.length);
+        System.arraycopy(this.cfr_renamed_0, 0, byArray, this.cfr_renamed_2.length, this.cfr_renamed_0.length);
+        System.arraycopy(this.cfr_renamed_1, 0, byArray, this.cfr_renamed_2.length + this.cfr_renamed_0.length, this.cfr_renamed_1.length);
+        System.arraycopy(this.cfr_renamed_4, 0, byArray, this.cfr_renamed_2.length + this.cfr_renamed_0.length + this.cfr_renamed_1.length, this.cfr_renamed_4.length);
+        System.arraycopy(this.cfr_renamed_3, 0, byArray, this.cfr_renamed_2.length + this.cfr_renamed_0.length + this.cfr_renamed_1.length + this.cfr_renamed_4.length, this.cfr_renamed_3.length);
+        return byArray;
+    }
+
+    public byte[] cfr_renamed_5955() {
+        return sproze.cfr_renamed_158(this.cfr_renamed_4);
+    }
+
+    public byte[] cfr_renamed_5958() {
+        return sproze.cfr_renamed_158(this.cfr_renamed_2);
+    }
+
+    public byte[] cfr_renamed_3382() {
+        return sproze.cfr_renamed_158(this.cfr_renamed_1);
+    }
+
+    /*
+     * WARNING - void declaration
+     */
+    public sprmuf(spryeg spryeg2, byte[] byArray, byte[] byArray2, byte[] byArray3, byte[] byArray4, byte[] byArray5) {
+        void arg4;
+        void arg3;
+        void arg2;
+        void arg1;
+        void arg0;
+        sprmuf sprmuf2 = this;
+        sprmuf sprmuf3 = this;
+        super(true, (spryeg)arg0);
+        this.cfr_renamed_2 = sproze.cfr_renamed_158((byte[])arg1);
+        sprmuf3.cfr_renamed_0 = sproze.cfr_renamed_158((byte[])arg2);
+        sprmuf3.cfr_renamed_1 = sproze.cfr_renamed_158((byte[])arg3);
+        sprmuf2.cfr_renamed_4 = sproze.cfr_renamed_158((byte[])arg4);
+        sprmuf2.cfr_renamed_3 = sproze.cfr_renamed_158(byArray5);
+    }
+
+    public byte[] cfr_renamed_5959() {
+        return sproze.cfr_renamed_158(this.cfr_renamed_0);
+    }
+}
+

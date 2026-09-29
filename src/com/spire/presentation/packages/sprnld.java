@@ -1,0 +1,30 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.spire.presentation.packages;
+
+import com.spire.presentation.packages.sprt;
+
+public class sprnld
+implements sprt {
+    private byte[] cfr_renamed_4;
+
+    /*
+     * WARNING - void declaration
+     */
+    public sprnld(byte[] byArray, int n, int n2) {
+        void arg1;
+        void arg2;
+        this.cfr_renamed_4 = new byte[arg2];
+        System.arraycopy(byArray, (int)arg1, this.cfr_renamed_4, 0, (int)arg2);
+    }
+
+    public byte[] cfr_renamed_1521() {
+        return this.cfr_renamed_4;
+    }
+
+    public sprnld(byte[] arg0) {
+        this(arg0, 0, arg0.length);
+    }
+}
+
