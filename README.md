@@ -26,6 +26,20 @@ java -cp recovered-classes:build/classes PptxSourceConvert \
   input.pptx output.pdf output.html
 ```
 
+The same launcher can run directly from the self-contained recovered JAR
+(JDK 17+ is required for this build):
+
+```sh
+JDK=/opt/homebrew/Cellar/openjdk@17/17.0.20.1/libexec/openjdk.jdk/Contents/Home
+RECOVERY_JAR=path/to/spire.presentation-11.8.3-recovery-source-1863-methodnames.jar
+"$JDK/bin/javac" -encoding UTF-8 -d build/classes tools/PptxSourceConvert.java
+"$JDK/bin/java" -cp "$RECOVERY_JAR:build/classes" PptxSourceConvert \
+  input.pptx output.pdf output.html
+```
+
+The original `spire.presentation-11.8.3.jar` is intentionally absent from
+both commands. It is used only by the side-by-side acceptance harness.
+
 The utility emits PDF and HTML through the recovered Spire Presentation API.
 DOCX conversion is a separate HTML-to-DOCX step because this API's
 `FileFormat` does not expose a DOCX output format.
