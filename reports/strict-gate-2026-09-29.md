@@ -119,3 +119,12 @@ or `getSlide` when their parent is absent. The `Presentation` internal
 accessor transparently returns the underlying optional object. Replacing
 these values with defaults would change the caller control flow and violate
 the observed reference behavior.
+
+## Dynamic empty/default implementation scan
+
+The executed trace contained 177 unique methods. A conservative source-to-
+trace intersection found zero executed empty method bodies and zero executed
+methods whose entire body is a trivial literal default (`0`, `false`, an empty
+string, or equivalent). The separate exception probe still records the
+reference `appendTextFrame(null)` catch-and-print path, and the recovery keeps
+that path bytecode/behaviorally aligned rather than silently changing it.
