@@ -71,3 +71,28 @@ is not eligible for the stronger label **fully recovered** under the strict
 gate. The strict gate conflicts with preserving reference behavior for the
 observed optional-null and swallowed-exception paths. Removing those paths
 would be a product behavior change, not a recovery repair.
+
+## Real-user PPTX acceptance
+
+Input fixture: `/Users/lifengyuan/Documents/第1节 免疫系统的组成和功能 生物  周柳老师.pptx`.
+The acceptance run is recorded in `build/three-layer-389`; the input file is
+not copied into the repository.
+
+- Both recovered and reference runs produced 21-slide PPTX/ODP structures.
+- PPTX slide XML: all 21 slide files matched byte-for-byte; text-node count
+  was 387 on each side, with 5,897 extracted characters.
+- ODP `content.xml`, `styles.xml`, and `settings.xml` matched byte-for-byte;
+  each had 21 pages, 408 frames, 365 paragraphs, and 5,070 extracted text
+  characters.
+- HTML had identical extracted text statistics (3,016 characters, 11 media
+  tags, 36 occurrences of “免疫”, and 9 of “周柳”). Its only normalized
+  difference was generated UUID media filenames.
+- Spire-generated PDF output was byte-identical on both sides, reported as a
+  10-page PDF, and the legacy PPT output was identically empty.
+- Both generated PPTX files opened successfully in LibreOffice headless and
+  converted to PDF without an error.
+
+This fixture therefore passes the three output checks for the exercised
+conversion paths without using the original JAR as a runtime dependency of
+the recovered artifact. The reference JAR is used only by the side-by-side
+acceptance harness.
