@@ -7,12 +7,8 @@ public class sprrrd
 extends Exception {
     private final Exception cfr_renamed_4;
 
-    /*
-     * WARNING - void declaration
-     */
     public sprrrd(String string, Exception exception) {
-        super((String)arg0);
-        void arg0;
+        super(string);
         this.cfr_renamed_4 = exception;
     }
 

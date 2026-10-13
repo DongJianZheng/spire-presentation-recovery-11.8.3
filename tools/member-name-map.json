@@ -1,0 +1,381 @@
+{
+  "evidence": [
+    "recovery-work/analysis/api-02/FileFormat.javap.txt",
+    "recovery-work/analysis/api-02/sprrrd.javap.txt",
+    "recovery-work/analysis/api-02/sprfto.javap.txt",
+    "recovery-work/analysis/enum-fidelity-04/original-javap.txt",
+    "recovery-work/analysis/api-enum-05-audit/report.md"
+  ],
+  "members": [
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "sourceName": "SVG",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "jvmName": "spr”"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "sourceName": "displayName",
+      "descriptor": "Ljava/lang/String;",
+      "jvmName": "spr‼"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "sourceName": "value",
+      "descriptor": "I",
+      "jvmName": "spr‱"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprrrd",
+      "sourceName": "cfr_renamed_4",
+      "descriptor": "Ljava/lang/Exception;",
+      "jvmName": "spr‱"
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/packages/sprrrd",
+      "sourceName": "cfr_renamed_9",
+      "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "jvmName": "spr⅖“"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "sourceName": "allValues",
+      "descriptor": "[Lcom/spire/presentation/FileFormat;",
+      "jvmName": "spr…"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_0",
+      "descriptor": "I",
+      "jvmName": "spr†"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_1",
+      "descriptor": "I",
+      "jvmName": "spr…"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_2",
+      "descriptor": "I",
+      "jvmName": "spr‼"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_3",
+      "descriptor": "I",
+      "jvmName": "spr”"
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_4",
+      "descriptor": "I",
+      "jvmName": "spr‱"
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_9",
+      "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "jvmName": "spr⅖“"
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/packages/sprfto",
+      "sourceName": "cfr_renamed_18838",
+      "descriptor": "()Z",
+      "jvmName": "spr┢┞"
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/packages/sprtea",
+      "sourceName": "reserved",
+      "descriptor": "()Z",
+      "jvmName": "spr……"
+    }
+  ],
+  "classes": {
+    "recovery/build/EnumBase": "java/lang/Enum"
+  },
+  "buildOnlyClasses": [
+    "recovery/build/EnumBase"
+  ],
+  "classFlags": {
+    "com/spire/presentation/FileFormat": 16433
+  },
+  "memberFlags": [
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "TIFF",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "DPS",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "WMV",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPSX_2013",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPS",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "MP4",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PDF",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTX_2010",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "Markdown",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTX_2016",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "POTX",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPT",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "spr…",
+      "descriptor": "[Lcom/spire/presentation/FileFormat;",
+      "access": 4122
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPSX_2007",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "DPT",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTX_2013",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "OFD",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "spr‼",
+      "descriptor": "Ljava/lang/String;",
+      "access": 2
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPSX_2016",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTX_2007",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "spr”",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPSX_2019",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "ODP",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "spr‱",
+      "descriptor": "I",
+      "access": 2
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTX_2019",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPSX_2010",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "AUTO",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "XPS",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "PPTM",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "field",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "HTML",
+      "descriptor": "Lcom/spire/presentation/FileFormat;",
+      "access": 16409
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "getValue",
+      "descriptor": "()I",
+      "access": 1
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "getName",
+      "descriptor": "()Ljava/lang/String;",
+      "access": 1
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "values",
+      "descriptor": "()[Lcom/spire/presentation/FileFormat;",
+      "access": 9
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "access": 9
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "valueOf",
+      "descriptor": "(Ljava/lang/String;)Lcom/spire/presentation/FileFormat;",
+      "access": 9
+    },
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;ILjava/lang/String;I)V",
+      "access": 4098
+    }
+  ],
+  "memberSignatures": [
+    {
+      "kind": "method",
+      "owner": "com/spire/presentation/FileFormat",
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;ILjava/lang/String;I)V",
+      "signature": "(Ljava/lang/String;I)V"
+    }
+  ]
+}
