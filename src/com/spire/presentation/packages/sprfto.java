@@ -35,20 +35,13 @@ public final class sprfto {
         return new String(cArray);
     }
 
-    /*
-     * WARNING - void declaration
-     */
     public sprfto(int n, int n2, int n3, int n4, int n5) {
-        void arg3;
-        void arg2;
-        void arg1;
-        void arg0;
         sprfto sprfto2 = this;
         sprfto sprfto3 = this;
-        this.cfr_renamed_3 = arg0;
-        sprfto3.cfr_renamed_2 = arg1;
-        sprfto3.cfr_renamed_0 = arg2;
-        sprfto2.cfr_renamed_4 = arg3;
+        this.cfr_renamed_3 = n;
+        sprfto3.cfr_renamed_2 = n2;
+        sprfto3.cfr_renamed_0 = n3;
+        sprfto2.cfr_renamed_4 = n4;
         sprfto2.cfr_renamed_1 = n5;
     }
 

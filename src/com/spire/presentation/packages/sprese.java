@@ -12,12 +12,8 @@ extends Exception {
         return this.cfr_renamed_4;
     }
 
-    /*
-     * WARNING - void declaration
-     */
     public sprese(String string, Throwable throwable) {
-        super((String)arg0);
-        void arg0;
+        super((String)string);
         this.cfr_renamed_4 = throwable;
     }
 }

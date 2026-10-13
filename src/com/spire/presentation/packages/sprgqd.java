@@ -7,12 +7,8 @@ public class sprgqd
 extends RuntimeException {
     private Throwable cfr_renamed_4;
 
-    /*
-     * WARNING - void declaration
-     */
     public sprgqd(String string, Throwable throwable) {
-        super((String)arg0);
-        void arg0;
+        super((String)string);
         this.cfr_renamed_4 = throwable;
     }
 
